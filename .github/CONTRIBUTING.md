@@ -54,4 +54,4 @@ Every contribution should be made via a [pull request](https://help.github.com/e
 * when starting a pull request, please add two reviewers:
     - [Meena Choi](https://github.com/MeenaChoi) - the main developer and maintainer of the package,
     - another one of the current maintainers (a list can be found in the DESCRIPTION file),
-* when adding new code, please update the NEWS.md file and follow the conventions of [semantic versioning](https://semver.org/).
+* before the pull request is merged, please update the NEWS.md file and version of the package, following the conventions of [semantic versioning](https://semver.org/).
