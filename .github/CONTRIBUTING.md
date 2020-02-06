@@ -18,12 +18,6 @@ Typos and grammatical errors in documentation can be fixed directly via Github.
 All changes should be made in the `.R` or `.Rmd` files rather than `.Rd` files in the `/man` directory.
 
 
-## Feature requests
-
-GitHub issues are meant primarily for bug requests.
-We suggest to make feature requests via the official [Google group](https://groups.google.com/forum/#!forum/msstats) of `MSstats`.
-
-
 ## Bug reports
 
 Bug reports can be filed in two ways:
@@ -41,6 +35,12 @@ Before filing a bug report please make sure that:
 The [reprex](https://reprex.tidyverse.org/) package might be helpful.
 
 To help with describing the bug, we have created an issue template which can be used after starting a new issue.
+
+
+## Feature requests
+
+GitHub issues are meant primarily for bug requests.
+We suggest to make feature requests via the official [Google group](https://groups.google.com/forum/#!forum/msstats) of `MSstats`.
 
 
 ## Code contributions
