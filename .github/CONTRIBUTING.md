@@ -49,6 +49,8 @@ Every contribution should be made via a [pull request](https://help.github.com/e
 [R Markdown](https://cran.r-project.org/web/packages/roxygen2/vignettes/markdown.html) for documentation.  
 * new code should follow the tidyverse [style guide](https://style.tidyverse.org) with the following exceptions:
     - names of functions and classes should be `camelCase`,
+    - other names should use the underscore `_` and lowercase, except already existing names,
+    which should not be changed to ensure backward compatibility.
 * when starting a pull request, please add two reviewers:
     - [Meena Choi](https://github.com/MeenaChoi) - the main developer and maintainer of the package,
     - another one of the current maintainers (a list can be found in the DESCRIPTION file),
