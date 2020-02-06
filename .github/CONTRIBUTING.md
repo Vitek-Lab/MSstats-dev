@@ -4,6 +4,12 @@ Thank you for considering contributing to the MSstas package.
 This document aims to help you take the right steps to file a bug report (report an issue), 
 request a new feature, fix a typo or propose code changes.
 
+## Code of conduct
+
+As contributors and maintainers of MSstats project, we pledge to follow the [Carpentry Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
+
+Instances of abusive, harassing or other unacceptable behavior may be reported by following our [reporting guidelines](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html#reporting-guidelines).
+
 
 ## Typos
 
