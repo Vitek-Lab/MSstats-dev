@@ -107,6 +107,11 @@ OpenSWATHtoMSstatsFormat <- function(input,
     
     ## The columns "aggr_Fragment_Annotation" : separate by ';' and "aggr_Peak_Area" : separate by ';' 
     ## are disaggregated into the new columns "FragmentIon" and "Intensity". 
+    
+    ## 2020.10.05 : change factor to character
+    input$aggr_Fragment_Annotation <- as.character(input$aggr_Fragment_Annotation)
+    input$aggr_Peak_Area <- as.character(input$aggr_Peak_Area)
+    
     input <- input %>%
         separate_rows(aggr_Fragment_Annotation, aggr_Peak_Area, sep="[;]")
     
@@ -252,7 +257,8 @@ OpenSWATHtoMSstatsFormat <- function(input,
         ## maximum or sum up abundances among intensities for identical features within one run
         input_w <- dcast( ProteinName + PeptideSequence + PrecursorCharge + FragmentIon ~ Run, data=input, 
                           value.var='Intensity', 
-                          fun.aggregate=summaryforMultipleRows, fill=0) 
+                          fun.aggregate=summaryforMultipleRows, na.rm=T,
+                          fill=0) 
     
         ## reformat for long format
         input <- melt(input_w, id=c('ProteinName', 'PeptideSequence', 'PrecursorCharge', 'FragmentIon'))
